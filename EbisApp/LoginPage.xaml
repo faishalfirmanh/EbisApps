@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EbisApp.LoginPage"
+             BackgroundColor="White"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
+             >
+    <VerticalStackLayout>
+        <StackLayout>
+            <Image  
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               Source="kotak1.png"
+               Margin="-12,-100,0,0"
+               WidthRequest="440" 
+               HeightRequest="400" 
+               Aspect="AspectFit"/>
+            <Image  
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="ellipse1.png"
+                Margin="0,-520,-250,0"
+                WidthRequest="200" 
+                HeightRequest="200" 
+                Aspect="AspectFit"/>
+
+            <Image  
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="ellipse2.png"
+                Margin="0,-525,-250,0"
+                WidthRequest="160" 
+                HeightRequest="160" 
+                Aspect="AspectFit"/>
+        </StackLayout>
+        <StackLayout Margin="0,-100">
+        <Frame   BorderColor="Black"
+                 CornerRadius="10"
+                 Padding="5"
+                 Margin="0, 130"
+                 WidthRequest="310"
+                 HeightRequest="60"
+                 HasShadow="False">
+
+            <StackLayout>
+                <Image  
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                   Source="iconuser.png"
+                   Margin="-250,5,0,0"
+                   WidthRequest="30" 
+                   HeightRequest="30" 
+                   Aspect="AspectFit"/>
+
+                <Entry x:Name="input_username"
+                         WidthRequest="300"
+                         Placeholder="Username"
+                         Margin="90,-40,5,5"
+                         TextColor="Black"
+                        />
+            </StackLayout>
+        </Frame>
+
+        <Frame BorderColor="Black"
+                CornerRadius="10"
+                Padding="5"
+                Margin="0,-110"
+                WidthRequest="310"
+                HeightRequest="60"
+                HasShadow="False">
+            <StackLayout>
+                <Image  
+                      VerticalOptions="FillAndExpand"
+                      HorizontalOptions="FillAndExpand"
+                      Source="keysdua.png"
+                      Margin="-260,10,0,0"
+                      WidthRequest="30" 
+                      HeightRequest="30" 
+                      Aspect="AspectFit"/>
+
+                <Entry x:Name="input_password"
+                        WidthRequest="300"
+                        Placeholder="Password"
+                        Margin="90,-49,5,5"
+                        TextColor="Black"
+                        IsPassword="True"
+                       />
+            </StackLayout>
+        </Frame>
+        
+           <Button Text="Login" FontSize="20"  TextColor="White"
+              BackgroundColor="#371D5C"
+              WidthRequest="310"
+              Margin="50,140"
+              HeightRequest="50"
+              VerticalOptions="Start"
+              HorizontalOptions="Start"
+              Clicked="moveToHome"
+           />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

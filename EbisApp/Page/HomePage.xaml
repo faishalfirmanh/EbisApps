@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EbisApp.Page.HomePage"
+             Title="HomePage"
+             BackgroundColor="White"
+            Shell.FlyoutBehavior="Disabled"
+            Shell.NavBarIsVisible="False">
+    
+    <VerticalStackLayout>
+        <StackLayout>
+           
+            <Image  
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Source="kotak1.png"
+                Margin="-12,-100,0,0"
+                WidthRequest="440" 
+                HeightRequest="400" 
+                Aspect="AspectFit"/>
+            <Image  
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Source="ellipse1.png"
+                 Margin="0,-520,-250,0"
+                 WidthRequest="200" 
+                 HeightRequest="200" 
+                 Aspect="AspectFit"/>
+
+            <Image  
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Source="ellipse2.png"
+                 Margin="0,-525,-250,0"
+                 WidthRequest="160" 
+                 HeightRequest="160" 
+                 Aspect="AspectFit"/>
+            <Label Text="Selamat datang," FontSize="14" TextColor="White" Margin="20,-250,0,0"/>
+            <Label Text="Dwi Sasono" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="20,-220,0,0"/>
+
+        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <StackLayout Margin="0,-110">
+                <Rectangle Style="{StaticResource styleKotak}">
+                </Rectangle>
+                <ImageButton 
+                     Margin="0,-100"
+                     WidthRequest="60" 
+                     HeightRequest="60" 
+                     Source="iconform.png" 
+                     Style="{StaticResource styleImageMenu}"/>
+                <Label  Margin="80,106"
+                        Text="Form" 
+                        TextColor="Black" 
+                        FontSize="14" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <!--start card-->
+            <StackLayout Margin="10,50" Orientation="Vertical">
+                <Rectangle 
+                    Stroke="Black"
+                    StrokeThickness="2"
+                    RadiusX="0"
+                    RadiusY="0"
+                    WidthRequest="93"
+                    HeightRequest="113"
+                    BackgroundColor="White">
+                </Rectangle>
+                <ImageButton 
+                     Margin="0,-110"
+                     WidthRequest="60" 
+                     HeightRequest="60" 
+                     Source="iconauth.png" 
+                     Style="{StaticResource styleImageMenu}"/>
+                <Label  Margin="80,106"
+                        Text="COBAK  TESS AUTH" 
+                        TextColor="RED" 
+                        FontSize="14" FontAttributes="Bold"/>
+            </StackLayout>
+            <!--end card-->
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
